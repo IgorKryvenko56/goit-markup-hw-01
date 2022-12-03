@@ -1,0 +1,240 @@
+:root {
+  --primary-text-color: #FFFFFF;
+  --title-text-color: #434455;
+  --accent-color: #E7E9FC;
+  --primary-focused-active-links-color:#4D5AE5 ;
+  --cloud-color:#F4F4FD;
+  --hover-color:#2E2F42;
+  --click-color:#404BBF;
+  }
+body {
+  width: 1440px;
+  height: 2593px;
+  font-family:'Roboto',sans-serif; 
+  font-style: normal;
+  font-size:  16px;
+  font-weight:normal;
+  line-height: 1.2;
+  color:#434455 ;
+  background-color :var(--primary-text-color);
+  }
+.header {
+    background-color:var(--primary-text-color);
+    width: 1440px;
+    height: 72px;
+  }
+.wrapper {
+    max-width: 1128px;
+    margin: auto;
+  }
+/*.header-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}*/
+.header-wrapper {
+  width: 1128px;
+  height: 72px;
+} 
+/*--logo--*/
+.header-logo .logo {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin: 44px 0px 71px 24px;
+  text-decoration: none;
+  color:#2E2F42;
+}
+.header-logo .web {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 44px 24px;
+  text-decoration: none;
+  color:#4D5AE5;
+}
+/* Navigation */
+
+/*.header-list{
+  display: flex;
+  flex-wrap: wrap;
+}*/
+.nav {
+  width: 261px;
+  height: 24px;
+  margin: 24px 831px 24px 348px;
+}
+.header-list .header-item {
+  display:inline-block;
+  color:#2E2F42;
+} 
+.header-item:last-child{
+  margin-right: 0;
+}
+.header-item .link-current:hover,
+.header-item .link-current:focus{ 
+  color:var(--accent-color) ;
+}
+.header-item .link:hover,
+.header-item .link:focus{ 
+  color:var(--accent-color) ;
+}
+.header-logo.link {
+  color:#2E2F42 ;
+}
+.header-logo.link .web {
+  color:#4D5AE5;
+}
+.header-logo.link:hover,
+.header-logo.link:focus{
+color:#4D5AE5;
+}
+.header-list .link-current{
+  color: #4D5AE5;
+}
+.connection-list .connection-item {
+  display: inline-block;
+  color: #434455;
+}
+ul {
+  list-style: none;
+}
+/* Заглавия */
+.hero {
+  background-color:#2E2F42 ;
+}
+.hero-title {
+  color:#FFFFFF ;
+}
+/* Секции */
+/*--section Polycy {
+width: 1128px;
+height: 104px;*/
+
+.section-title {
+  color: #2E2F42;
+}
+.policy-list .title {
+color:#2E2F42;
+}
+.policy-list .title-text {
+ color:var(--title-text-color); 
+}
+.team-list .team-title{
+  color: var(--title-text-color);
+}
+.footer {
+  width: 1440;
+  height: 310px;;
+  background-color: #2E2F42;
+}
+.footer-logo {
+  width: 115px;
+  height: 32px;
+  padding: 5px 0px 5px 0px;
+}
+.text {
+  width: 264px;
+  height: 110px;
+  margin: 100px 1020px 100px 156px;
+}
+.footer-logo .logo {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color:#F4F4FD ;
+  text-decoration: none;
+}
+.footer-logo .web {
+  color:#4D5AE5;
+}
+.footer-text {
+  color:#434455 ;
+}
+.subtitle {
+  background-color: var(--accent-text-color);
+}
+
+
+
+/* Основной цвет страницы: #FFFFFF */
+/* Цвет кнопки Order Service: 4D5AE5 */
+/* цвет футера,хедера:  2E2F42 */
+/* Цвет card team cloud: F4F4FD */
+/* Iris CTAs Focused Active states LinksPrimary Brand 
+#4D5AE5 */
+/* Navy blue: OverlaysShadowsHeadings Dark
+#2E2F42*/
+/* GREEN: Valid fields,Success messages,Success
+#31D0AA */
+/* SLATE:Body text,Text 
+#434455 */
+/* LIGHT SLATE: Helper text,Deemphasized text,Subtle Text
+#8E8F99 */
+/* cornflower:Accent color,Hairlines,Subtle backgrounds
+Accent
+#E7E9FC */
+/* cornflower
+Accent color
+Hairlines
+Subtle backgrounds
+Accent
+#E7E9FC */
+/*CLOUD:Light mode backgrounds,Light mode Dialogs/alerts
+Light 
+#F4F4FD*/
+
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 170px;
+  height: 51px;
+  left: 635px;
+  top: 432px;
+  color:var(--cloud-color);
+  background-color:var(--primary-focused-active-links-color)
+}
+ 
+.btn {
+  border: none;
+  padding: 0.25rem 1.25rem;
+}
+
+.link {
+  text-decoration: none;
+  color: navy;
+}
+.button:active {
+  color: red;
+  background-color: #4D5AE5;
+}
+.button:hover,
+.button:focus {
+  color: var(--hover-color);
+}
+.link.active {
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  color: navy;
+  opacity: 0.5;
+}
+.link:hover,
+.link:focus {
+  color: #000;
+  opacity: 1;
+}
+
